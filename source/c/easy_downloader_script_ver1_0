@@ -1,0 +1,47 @@
+#include<stdlib.h>
+#include<stdio.h>
+#include<unistd.h>
+#include<string.h>
+#define N "N"
+#define NN "n"
+#define Y "Y"
+#define YY "y"
+
+void abema(void);
+
+int main(){
+    char ans[100];
+    int i;
+    abema();
+
+    for(;;){
+        printf("続行しますか[Y/N]:");
+        scanf("%s",ans);
+
+        if((strcmp(ans,Y)&&(strcmp(ans,YY))) == 0){
+            printf("続行します\n");
+            abema();
+        }else if((strcmp(ans,NN)&&(strcmp(ans,N))) ==0){
+            printf("終了します\n");
+            break;
+        }else{
+            printf("入力された値は無効です（値:%s）\n",ans);
+        }   
+    }    
+    return 0;
+}
+
+void abema(void){
+
+    char rinku[100],file[100],cd[100],comando[1000],comando2[1000];
+
+    printf("┌-------------------------------┐\n");
+    printf("￤色んな動画をダウンロードします ￤\n");
+    printf("└-------------------------------┘\n");
+    printf("リンクを入力してください:");
+    scanf("%s",rinku);
+    printf("\n保存名を入力してください:");
+    scanf("%s",file);
+    sprintf(comando,"streamlink %s best -o %s",rinku,file);
+    system(comando);
+}
