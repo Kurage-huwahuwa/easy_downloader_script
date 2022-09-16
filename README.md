@@ -38,7 +38,6 @@ C:\Users\user_name\Downloads\hogehoge.mp4<br>
 
 ➃（保存先を指定しなかった場合、）windowsならVideo、linuxならビデオフォルダーにダウンロードされます<br>
 
-　
 ダウンロードされる画質、音質
 -----------------------
 最高画質、音質となっています。<br>
