@@ -9,8 +9,8 @@ python3が必要です<br>
 ➀windows→ https://pythonlinks.python.jp/ja/index.html<br>
 　Ubuntu系→ sudo apt install python3-pip<br>
 ➁コマンドプロント等で下のコマンドを実行<br>
-　$ pip3 install streamlink<br>
-　$ pip3 install  yt-dlp<br>
+　`$ pip3 install streamlink`<br>
+　`$ pip3 install  yt-dlp`<br>
 
 OSに関してはほとんどの環境で動作するはずですが一応
 
@@ -27,13 +27,13 @@ OSに関してはほとんどの環境で動作するはずですが一応
 ➁「ダウンロードリンク :」でリンクを貼り付け<br>
 abemaのリンク以外であれば、リンクの前に空白をつけて"mp3"を入力するとmp3形式で取り込みます<br>
 例）<br>
-https://www.youtube.com/hoge<br>
+`mp3 https://www.youtube.com/hoge`<br>
 
 ➂（abemaのリンクのみ）「保存名 :」で保存名を決定<br>
 もしファイルパスをパスを入力すればそこにダウンロードしてくれます<br>
 例）<br>
-C:\Users\user_name\Downloads\hogehoge.mp4<br>
-/home/user_name/デスクトップ/hogehoge<br>
+`C:\Users\user_name\Downloads\hogehoge.mp4`<br>
+`/home/user_name/デスクトップ/hogehoge`<br>
 （拡張子はこのスクリプト側で判断するのでなくてもokです）<br>
 
 ➃（保存先を指定しなかった場合、）windowsならVideo、linuxならビデオフォルダーにダウンロードされます<br>
